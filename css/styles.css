@@ -1,0 +1,31 @@
+/* line 5, ../sass/styles.scss */
+body {
+  background: #2c3e50;
+  margin: 0;
+  padding: 0;
+}
+
+/*Chat heads*/
+/* line 16, ../sass/styles.scss */
+.chat-heads {
+  position: absolute;
+  left: -5px;
+  z-index: 99999;
+}
+/* line 22, ../sass/styles.scss */
+.chat-heads a {
+  display: block;
+}
+/* line 26, ../sass/styles.scss */
+.chat-heads a img {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 55px;
+  box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.7), 0 0 5px black;
+  height: 55px;
+  width: 55px;
+}
+/* line 35, ../sass/styles.scss */
+.chat-heads a img:active {
+  height: 50px;
+  width: 50px;
+}

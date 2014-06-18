@@ -1,0 +1,40 @@
+$background: #2c3e50;
+
+
+body
+{
+	background: $background;
+	margin: 0;
+	padding: 0;
+}
+
+
+/*Chat heads*/
+$size: 55px;
+
+.chat-heads
+{
+	position: absolute;
+	left: -5px;
+	z-index: 99999;
+
+	a
+	{
+		display: block;
+
+		img
+		{
+			border: 1px solid rgba(255,255,255,0.2);
+			border-radius: $size;
+			box-shadow: inset 1px 1px 10px rgba(0,0,0,0.7), 0 0 5px rgba(0,0,0,1);
+			height: $size;
+			width: $size;
+		}
+
+		img:active
+		{
+			height: $size - 5px;
+			width: $size - 5px;
+		}
+	}
+}
