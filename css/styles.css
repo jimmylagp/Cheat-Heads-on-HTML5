@@ -14,18 +14,15 @@ body {
 }
 /* line 22, ../sass/styles.scss */
 .chat-heads a {
-  display: block;
-}
-/* line 26, ../sass/styles.scss */
-.chat-heads a img {
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-size: 100% 100% !important;
   border-radius: 55px;
-  box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.7), 0 0 5px black;
+  box-shadow: inset 0px 0px 1px rgba(255, 255, 255, 0.7), 0 0 5px black;
+  display: block;
   height: 55px;
   width: 55px;
 }
-/* line 35, ../sass/styles.scss */
-.chat-heads a img:active {
+/* line 32, ../sass/styles.scss */
+.chat-heads a:active {
   height: 50px;
   width: 50px;
 }
