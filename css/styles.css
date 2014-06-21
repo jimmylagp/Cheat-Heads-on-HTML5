@@ -10,9 +10,10 @@ body {
 .chat-heads {
   position: absolute;
   left: -5px;
+  top: 10px;
   z-index: 99999;
 }
-/* line 22, ../sass/styles.scss */
+/* line 23, ../sass/styles.scss */
 .chat-heads a {
   background-size: 100% 100% !important;
   border-radius: 55px;
@@ -21,8 +22,28 @@ body {
   height: 55px;
   width: 55px;
 }
-/* line 32, ../sass/styles.scss */
+/* line 33, ../sass/styles.scss */
 .chat-heads a:active {
   height: 50px;
   width: 50px;
+}
+/* line 39, ../sass/styles.scss */
+.chat-heads i {
+  background-color: #adafb5;
+  background-image: linear-gradient(to top, #ff1919, #ff5959);
+  box-shadow: 0px 1px 3px #000;
+  border: 1px solid rgba(255, 0, 0, 0.5);
+  border-radius: 4px/3px;
+  display: block;
+  height: 20px;
+  color: #fff;
+  font-style: normal;
+  font-family: 'Helvetica';
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 22px;
+  margin: -50px 0 0 -5px;
+  text-align: center;
+  text-shadow: 0 2px 0 #c51414;
+  width: 13px;
 }
