@@ -1,19 +1,21 @@
 /* line 5, ../sass/styles.scss */
 body {
   background: #2c3e50;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
   margin: 0;
   padding: 0;
 }
 
 /*Chat heads*/
-/* line 16, ../sass/styles.scss */
+/* line 18, ../sass/styles.scss */
 .chat-heads {
   position: absolute;
   left: -5px;
   top: 10px;
   z-index: 99999;
 }
-/* line 23, ../sass/styles.scss */
+/* line 25, ../sass/styles.scss */
 .chat-heads a {
   background-size: 100% 100% !important;
   border-radius: 55px;
@@ -22,12 +24,12 @@ body {
   height: 55px;
   width: 55px;
 }
-/* line 33, ../sass/styles.scss */
+/* line 35, ../sass/styles.scss */
 .chat-heads a:active {
   height: 50px;
   width: 50px;
 }
-/* line 39, ../sass/styles.scss */
+/* line 41, ../sass/styles.scss */
 .chat-heads i {
   background-color: #adafb5;
   background-image: linear-gradient(to top, #ff1919, #ff5959);
@@ -46,4 +48,144 @@ body {
   text-align: center;
   text-shadow: 0 2px 0 #c51414;
   width: 13px;
+}
+
+/* line 63, ../sass/styles.scss */
+.chat-box {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  left: 300px;
+  position: absolute;
+  top: 100px;
+  width: 300px;
+  z-index: 1;
+  -webkit-transform: scale(0);
+}
+/* line 75, ../sass/styles.scss */
+.chat-box #name {
+  border-bottom: 1px solid #ccc;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.3);
+  padding: 0.5rem;
+}
+/* line 81, ../sass/styles.scss */
+.chat-box #name h2 {
+  font-size: 1rem;
+  margin: 0;
+  text-align: center;
+}
+/* line 89, ../sass/styles.scss */
+.chat-box #chat {
+  background: #e5e9ef;
+  height: 350px;
+  overflow-y: scroll;
+  width: 100%;
+}
+/* line 96, ../sass/styles.scss */
+.chat-box #chat .message {
+  overflow: hidden;
+}
+/* line 100, ../sass/styles.scss */
+.chat-box #chat .message img {
+  display: block;
+  height: 35px;
+  margin: 0.5rem 1rem;
+  position: relative;
+  vertical-align: bottom;
+  width: 35px;
+}
+/* line 110, ../sass/styles.scss */
+.chat-box #chat .message p {
+  border-radius: 4px;
+  color: #333;
+  display: block;
+  font-size: 0.7rem;
+  max-width: 180px;
+  padding: 0.5rem;
+  position: relative;
+}
+/* line 125, ../sass/styles.scss */
+.chat-box #chat .message.guest img {
+  float: left;
+}
+/* line 130, ../sass/styles.scss */
+.chat-box #chat .message.guest p {
+  background: #FFF;
+  float: left;
+  margin: 0.5rem 0;
+}
+/* line 137, ../sass/styles.scss */
+.chat-box #chat .message.guest p:after {
+  background: #FFF;
+  content: '';
+  display: block;
+  height: 10px;
+  left: -5px;
+  -webkit-transform: rotate(-45deg);
+  position: absolute;
+  top: 9px;
+  width: 10px;
+}
+/* line 154, ../sass/styles.scss */
+.chat-box #chat .message.me img {
+  float: right;
+}
+/* line 159, ../sass/styles.scss */
+.chat-box #chat .message.me p {
+  background: #d2e7ff;
+  float: right;
+  margin: 0.5rem 1rem;
+}
+/* line 166, ../sass/styles.scss */
+.chat-box #chat .message.me p:after {
+  background: #d2e7ff;
+  content: '';
+  display: block;
+  float: right;
+  height: 10px;
+  right: -12px;
+  -webkit-transform: rotate(-45deg);
+  position: relative;
+  top: 1px;
+  width: 10px;
+}
+/* line 182, ../sass/styles.scss */
+.chat-box #box {
+  border-top: 1px solid #CCC;
+  padding: 0.3rem 1rem;
+}
+/* line 187, ../sass/styles.scss */
+.chat-box #box input[type="text"] {
+  border: 0;
+  background: transparent;
+  font-size: 0.8rem;
+  outline: 0;
+  width: 230px;
+}
+/* line 196, ../sass/styles.scss */
+.chat-box #box input[type="submit"] {
+  background: url(../img/send_icon.png) no-repeat;
+  background-size: 30px 30px;
+  border: 0;
+  cursor: pointer;
+  height: 30px;
+  outline: 0;
+  padding: 0;
+  text-indent: -3000px;
+  width: 30px;
+}
+
+/* line 210, ../sass/styles.scss */
+.chat-box:before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  margin: -10px auto;
+  left: 0;
+  right: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 20px solid #fff;
 }

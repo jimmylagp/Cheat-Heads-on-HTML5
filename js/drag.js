@@ -24,6 +24,9 @@
                 oldy = $drag.offset().top;
 
             $drag.css('z-index', 100000);
+            
+            $('.chat-box').css({'-webkit-transition': 'all .2s ease-in-out'});
+            $('.chat-box').css({'-webkit-transform-origin': 'left top'});
 
             $(document.documentElement).on('mousemove.drag', function(e) {
                 var head_wpostion = $(options.heads).position().left;
@@ -47,17 +50,20 @@
                 if($drag.offset().left == oldx && $drag.offset().top == oldy)
                 {
                     var chats = $(options.heads);
-                    console.log(status);
                     if(status)
                     {
                         status = false;
                         chats.each(function(i) {
-                            $(chats[i]).animate({ left: 70*(i+1), top: 30 }, 100);
+                            $(chats[i]).animate({ left: 70*(i+3), top: 30 }, 100);
                         });
+                        
+                        $('.chat-box').css({left: $drag.css('left') + 140, top: $drag.css('top') + 70});
+                        $('.chat-box').css({'-webkit-transform': 'scale(1)'});
                     }
                     else
                     {
                         status = true;
+                        $('.chat-box').css({'-webkit-transform': 'scale(0)'});
                         positioner();
                     }
                 }
